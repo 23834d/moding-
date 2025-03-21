@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Modeling Tool</title>
+    <style>
+        body { margin: 0; overflow: hidden; font-family: Arial, sans-serif; }
+        #canvas-container { width: 100vw; height: 100vh; }
+        #controls { position: absolute; top: 10px; left: 10px; z-index: 100; background: rgba(255, 255, 255, 0.8); padding: 10px; border-radius: 5px; }
+        button { margin: 5px; padding: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div id="controls">
+        <button id="addCube">Add Cube</button>
+        <button id="addSphere">Add Sphere</button>
+        <button id="addCylinder">Add Cylinder</button>
+        <button id="addPlane">Add Plane</button>
+        <button id="addPyramid">Add Pyramid</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/controls/TransformControls.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
